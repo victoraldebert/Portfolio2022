@@ -53,3 +53,13 @@ body {
 .mb-auto-2 {
   margin-bottom: 50px;
 }
+
+.video {
+  height: 300px;
+  width: auto;
+}
+
+.showcase {
+  padding-top: 20px;
+  padding-bottom: 100px;
+}

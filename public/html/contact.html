@@ -78,7 +78,7 @@
   <body class="d-flex h-100 text-center text-white bg-dark">
     
 <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-  <header class="mb-auto">
+  <header class="mb-auto-2">
     <div>
       <h3 class="float-md-start mb-0">Victor A.</h3>
       <nav class="nav nav-masthead justify-content-center float-md-end">
@@ -91,9 +91,13 @@
 
   <main class="px-3">
     <h1>Me contacter</h1>
-    <p class="lead">Je suis ouvert à toutes opportunités.</p>
     <p class="lead">
-      <a href="mailto:victoraldebertpro@gmail.com"class="btn btn-lg btn-secondary fw-bold border-white bg-white">Cliquez-ici pour m'envoyer un mail</a>
+      <form action="" method="POST">
+        <input type="text" name="Name" placeholder="Nom complet" required>
+        <input type="email" name="Email" placeholder="Email" required>
+        <textarea name="Laissez votre message" placeholder="Message" required></textarea>
+        <button type="submit">Envoyer</button>
+      </form>
     </p>
   </main>
 
