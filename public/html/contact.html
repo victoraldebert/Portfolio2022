@@ -1,3 +1,8 @@
+<php
+  echo "Yo"
+></php>
+
+
 <!doctype html>
 <html lang="en" class="h-100">
   <head>
@@ -92,12 +97,64 @@
   <main class="px-3">
     <h1>Me contacter</h1>
     <p class="lead">
-      <form action="" method="POST">
+      <!-- <form class="container" action="" method="POST">
         <input type="text" name="Name" placeholder="Nom complet" required>
         <input type="email" name="Email" placeholder="Email" required>
+        <select name="Question">
+          <option>Avez-vous la sifilis</option>
+          <option>TEST</option>
+          <option>TEST3</option>
+        </select>
         <textarea name="Laissez votre message" placeholder="Message" required></textarea>
         <button type="submit">Envoyer</button>
+      </form> -->
+
+
+      <form name="myForm" action="/file.php" onsubmit="return validateForm()" method="post">
+         <table class="form-style">
+            <tr>
+               <td>
+                  <label>
+                     Votre nom <span class="required">*</span>
+                  </label>
+               </td>
+               <td>
+                  <input type="text" name="name" class="long"/>
+                  <span class="error" id="errorname"></span>
+               </td> 
+            </tr>
+            <tr>
+               <td>
+                  <label>
+                     Votre adresse e-mail <span class="required">*</span>
+                  </label>
+               </td>
+               <td>
+                  <input type="email" name="email" class="long"/>
+                  <span class="error" id="erroremail"></span>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <label>
+                     Message <span class="required">*</span>
+                  </label>
+               </td>
+               <td>
+                  <textarea name="message" class="long field-textarea"></textarea>
+                  <span class="error" id="errormsg"></span>
+               </td>
+            </tr>
+            <tr>
+               <td></td>
+               <td>
+                  <input type="submit" value="Envoyer">      
+                  <input type="reset" value="Réinitialiser"> 
+               </td>
+            </tr>
+         </table>
       </form>
+      
     </p>
   </main>
 
@@ -106,6 +163,6 @@
 </div>
 
 
-    
+    <script href="/public/js/contact.js"></script>
   </body>
 </html>
